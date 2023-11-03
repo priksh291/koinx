@@ -1,0 +1,295 @@
+.main{
+    position: relative;
+    background-color: white;
+    max-width: 881px;
+    border-radius: 16px;
+    
+    /* padding: 5px; */
+    
+}
+.mainbody{
+    margin: 0 50px;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+.tax_calculator{
+    position: relative;
+    
+    padding: 5px 60px ;
+    padding-bottom: 50px;
+    
+}
+.tax_calculator h1{
+    position: relative;
+    font-size: 36spx;
+    font-weight: 700;
+    text-align: center;
+    
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+.finance_dropdown{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    /* padding: 15px 11px 15px 12px; */
+}
+
+.finance_dropdown select{
+    
+    width: 228px;
+    height: 48px;
+    border: none;
+    background-color: #EFF2F5;
+    padding: 15px 11px 15px 12px;
+    
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    
+}
+.finance_dropdown select option{
+    position: absolute;
+    padding: 5px;
+}
+
+.country_dropdown{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.heading{
+    font-size: 14px;
+    color: 
+    #3E424A;
+    
+}
+.country_dropdown select{
+    
+    width: 228px;
+    height: 48px;
+    border: none;
+    background-color: #EFF2F5;
+    padding: 15px 11px 15px 12px;
+    
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    
+}
+.country_dropdown select option{
+    position: absolute;
+    padding: 5px;
+}
+
+.allselections{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.borderline{
+    position: relative;
+    border: 1px solid rgb(29, 29, 29);
+    border: 0px, 0px, 1px, 0px;
+    border-color: #EFF2F5;
+    margin-bottom: 28px;
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.firstinputs{
+    display: flex;
+    justify-content: space-between;
+}
+.selectioninput{
+    position: relative;
+    width: 335px;
+    height: 40px;
+    background-color: #EFF2F5;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    padding-left: 5px;
+}
+.dollarsign{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    /* margin-top: 12px;
+    margin-left: 11px; */
+    text-align: center;
+    
+}
+.shortlongbtn{
+    display: flex;
+    justify-content: space-between;
+    width: 336px;
+    height: 60px;
+}
+.btn{
+    height: 40px;
+    border: 1px solid 
+    #3E424A;
+    width: 162px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    padding: 24px, 12px, 24px, 12px;
+    
+}
+.btnselected{
+    border: 2px solid #0052FE;
+    
+    background-color: rgba(0, 0, 255, 0.06);
+    
+    color:#0141CF;
+    
+}
+.btntime{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.time_period{
+    font-size: 15px;
+    color: 
+    #3E424A;
+    font-weight: 500;
+}
+.taxrate{
+    width: 335px;
+    height: 40px;
+    border-radius: 8px;
+    justify-content: space-between;
+    Padding:10px 16px 10px 16px;
+    background-color: #EFF2F5;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+}
+.taxrateheading{
+    width: 335px;
+}
+.taxvalue{
+    font-size: 14px;
+}
+.nettaxdiv{
+    display: flex;
+    gap: 12px;
+}
+
+.netcapital{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    background-color: #EBF9F4;
+    border-radius: 8px;
+    width: 330px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+.totaltax{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    background-color: #EBF2FF;
+    border-radius: 8px;
+    width: 330px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+.gainprice{
+    font-size: 24px;
+    font-weight: 700;
+    color: #0FBA83;
+}
+.taxpay{
+    font-size: 24px;
+    font-weight: 700;
+    color: 
+    #0141CF;
+}
+
+.koinxdetails{
+    position: relative;
+    background-color: #0052FE;
+    width: 426px;
+    height: 400px;
+    border-radius: 16px;
+    justify-items: center;
+    padding: 55px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.headline{
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    
+    text-align: center;
+    margin-bottom: 10px;
+    
+    
+    
+    /* width: 268px; */
+}
+.tagline{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.koinxbtndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.koinxbtn{
+    width: 237px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #EBF2FF;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.koinxbtn:hover{
+    scale: 1.1;
+}
+
+.imagediv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
