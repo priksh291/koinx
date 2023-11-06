@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
+import {BiMenu} from 'react-icons/bi';
+import {RxCross1} from 'react-icons/rx'
+
 import logo from "../../assets/logo.png";
 
+
 const Navbar = () => {
+  const[menuvisible, setMenuVisible] = useState(false);
+
+  const toggleback = ()=>{
+    setMenuVisible(!menuvisible)
+  }
   return (
     <div>
       <div className="nav">
@@ -23,11 +32,14 @@ const Navbar = () => {
                     <button>Sign In</button>
                   </div>
                 </li>
+
               </ul>
             </div>
           </div>
+          <div className="bimenu" onClick={toggleback}>{menuvisible? <RxCross1/> : <BiMenu/>}</div>
         </div>
       </div>
+      
     </div>
   );
 };

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Main.css";
 import frame from "../../assets/Frame.png";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { BsCurrencyDollar } from "react-icons/bs";
 import { GoCheck } from "react-icons/go";
+
+
 
 const Main = () => {
   const [selectedOption1, setSelectedOption1] = useState("FY 2023-24");
@@ -57,7 +58,7 @@ const Main = () => {
 
     for (const key in taxRates) {
       const value = taxRates[key];
-      const matches = value.match(/\d+\.\d+/);
+      const matches = value.match(/\d+(\.\d+)?/);
 
       if (matches) {
         percentages[key] = matches[0];
@@ -70,8 +71,10 @@ const Main = () => {
 
   useEffect(() => {
     if (taxValue !== 0 && calculateCapitalGains > 0) {
-      const percentage = percentageValues[selectedIncome] / 100;
-
+      let percentage = percentageValues[selectedIncome] / 100;
+      if (percentage === 0.05) {
+        percentage = 0.325;
+      }
       if (investmentType === "Long Term") {
         setNextCapitalGain(discountGain * percentage);
       } else {
@@ -255,7 +258,7 @@ const Main = () => {
             <div className="firstinputs">
               <div className="nettaxdiv">
                 <div className="netcapital">
-                  <div>Net Capital gains tax amount</div>
+                  <div className="netheading">Net Capital gains tax amount</div>
                   <div className="gainprice">
                     $
                     {investmentType === "Long Term"
@@ -290,6 +293,8 @@ const Main = () => {
           </button>
         </div>
       </div>
+      
+      
     </div>
   );
 };

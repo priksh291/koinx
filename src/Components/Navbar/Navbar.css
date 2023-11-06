@@ -55,7 +55,27 @@
 .menuitems ul li{
     cursor: pointer;
     font-weight: 600;
+    /* font-size: 1vw; */
     font-size: 16px;
     
     
+}
+.bimenu{
+    display: none;
+}
+
+@media screen and (max-width: 795px){
+    .menubar{
+        display: none;
+    }
+    .bimenu{
+        display: flex;
+        font-size: xx-large;
+        align-items: center;
+    }
+    
+}
+
+.show-menu{
+    display: block;
 }

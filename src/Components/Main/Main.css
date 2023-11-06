@@ -1,14 +1,19 @@
 .main{
     position: relative;
     background-color: white;
-    max-width: 881px;
+    /* width: 881px; */
+    /* width: 50vw; */
     border-radius: 16px;
+    
     
     /* padding: 5px; */
     
 }
+
 .mainbody{
     margin: 0 50px;
+    /* margin-left: 50px; */
+    
     margin-bottom: 25px;
     position: relative;
     display: flex;
@@ -27,13 +32,14 @@
 }
 .tax_calculator h1{
     position: relative;
-    font-size: 36spx;
+    font-size: 36px;
     font-weight: 700;
     text-align: center;
     
 }
 .dropdown{
     display: flex;
+    position: relative;
     justify-content: space-between;
     margin-bottom: 28px;
 }
@@ -41,6 +47,7 @@
     display: flex;
     gap: 5px;
     align-items: center;
+    width: 100%;
     /* padding: 15px 11px 15px 12px; */
 }
 
@@ -66,6 +73,7 @@
     display: flex;
     gap: 5px;
     align-items: center;
+    /* width: 100%; */
 }
 .heading{
     font-size: 14px;
@@ -113,6 +121,8 @@
 .firstinputs{
     display: flex;
     justify-content: space-between;
+    gap: 5px;
+    position: relative;
 }
 .selectioninput{
     position: relative;
@@ -191,7 +201,9 @@
 }
 .nettaxdiv{
     display: flex;
-    gap: 12px;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
 }
 
 .netcapital{
@@ -229,6 +241,7 @@
     color: 
     #0141CF;
 }
+
 
 .koinxdetails{
     position: relative;
@@ -292,4 +305,63 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+    
+
+@media screen and (max-width: 1175px) {
+    .koinxdetails{
+        display: none;
+    }
+}
+@media screen and (max-width: 925px){
+    .main{
+        width: 100%;
+    }
+    .selectioninput{
+        width: 36vw;
+    }
+    .country_dropdown{
+        width: 36vw;
+    }
+    .finance_dropdown{
+        width: 36vw;
+
+    }
+    .shortlongbtn, .netcapital,.totaltax{
+        width: 36vw;
+    }
+    .btn, .btnselected{
+        width: 18vw;
+        
+    }
+    .taxrate,.taxrateheading{
+        width: 36vw;
+    }
+    
+}
+
+@media screen and (max-width: 647px){
+    .firstinputs,.dropdown,.nettaxdiv{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 15px;
+        
+        
+    }
+    .selectioninput, .country_dropdown,.finance_dropdown,.netcapital,.totaltax,.taxrate,.btn,.btnselected{
+        width :100%;
+    }
+    .mainbody{
+        margin: 0px;
+        padding: 4px;
+        background-color: white;
+        /* border: 1px solid black; */
+    }
+    .tax_calculator{
+        border: 1px solid gainsboro;
+        border-radius: 16px;
+    }
 }
